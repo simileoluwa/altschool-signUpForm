@@ -139,20 +139,40 @@ body {
   flex-direction: column;
   align-content: center;
   justify-content: space-between;
+  position: relative;
+}
+
+.circle2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+}
+
+.circle{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+    width: auto;
 }
 
 .wrapper-right {
   width: 50%;
   padding: 3em 5em;
-  /* position: relative; */
   overflow: auto !important;
   max-height: 100vh;
   max-height: 100svh;
-  /* position: relative; */
 }
 
 .wrapper-right::-webkit-scrollbar {
   display: none;
+}
+
+#article-title{
+  z-index: 100;
 }
 
 .title {

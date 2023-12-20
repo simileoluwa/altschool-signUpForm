@@ -55,6 +55,18 @@ body {
   color: azure;
 }
 
+.create-hide{
+  display: none;
+}
+
+.thisisme{
+  padding: .5rem 2rem;
+  background-color: black;
+  color: white !important;
+  border-radius: .4em;
+  outline: none;
+}
+
 .content {
   flex-direction: column;
   align-items: center;
@@ -216,9 +228,9 @@ ul.footer-icons--social {
   position: relative;
 }
 
-/* .abswrapper::-webkit-scrollbar {
+.abswrapper::-webkit-scrollbar {
   display: none;
-} */
+}
 
 
 .wrapper-right--guide {
@@ -335,8 +347,16 @@ ul.footer-icons--social {
   color: red;
 }
 
+@media screen and (min-width:320px) and (max-width:499px) {
 
-@media screen and (min-width:400px) and (max-width:600px) {
+  .form-flex{
+    flex-wrap: wrap;
+    gap: 0;
+    /* flex-direction: column; */
+  }
+}
+
+@media screen and (min-width:500px) and (max-width:600px) {
   .content{
     padding-block: 0;
     padding: 0;
@@ -364,5 +384,13 @@ ul.footer-icons--social {
 
   .wrapper-right{
     width: 100%;
+  }
+}
+
+@media screen and (min-width:770px) and (max-width:1000px) {
+  .form-flex{
+    /* display: block; */
+    flex-wrap: wrap;
+    gap: 0;
   }
 }
